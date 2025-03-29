@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Purple Purse";
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+header {
+  background-color: rgb(96, 154, 134);
+  width: 100%;
+  height: 5rem;
+  padding: 10px 10%;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  text-wrap: nowrap;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.title {
+  font-size: 20px;
+  color: white;
+}
+
+ul {
+  background-color: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  height: 40px;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  height: 100%;
+}
+
+.container-start {
+  background-color: rgb(96, 154, 134);
+  height: 100vh;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  z-index: 0;
+  align-items: center;
+  position: relative;
+  padding-top: 100px;
+  width: 100%;
+}
+
+.background-images {
+  margin-top: 1vw;
+  width: 100%;
+  height: 100%;
+  display: flex; /* Enable flexbox on the parent container */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Centers the children horizontally */
+}
+
+.dev {
+  width: 90%;
+  display: flex; /* Enable flexbox on the parent container */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: flex-start; /* Align children to the top of the container */
+  align-items: center; /* Centers the children horizontally */
+  margin-top: 1vw;
+  height: 100%;
+  gap: 30px;
+}
+
+.dev-bottom-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.dev-top,
+.dev-bottom {
+  z-index: 3;
+  padding: min(1%, 10px);
+  width: 80vw; /* Ensures both elements have the same width */
+  max-width: 800px;
+}
+
+.profile-img-one {
+  position: absolute;
+  top: 170px;
+  left: 15%;
+  width: 29.5%;
+  height: 33vw;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.container-quote {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 12vw;
+
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 0;
+}
+
+.quote {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-grow: 0;
+  width: 50%;
+  height: 100%;
+  padding: 0 5%;
+}
+
+.intro-txt {
+  width: 100%;
+  font-size: 1.2vw;
+  text-align: left;
+}
+
+.scroll-button {
+  background-color: aqua;
+  position: absolute;
+  bottom: -3.5%;
+  left: 50%;
+  transform: translateX(-50%); /*Is this correct?? */
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  text-decoration: none;
+  border-radius: 30px;
+  border-style: none;
+}
+
+.get-in-touch,
+.theme {
+  border-radius: 100px;
+  padding: 10px 10px;
+}
+
+.get-in-touch {
+  background-color: #e496a9;
+}
+
+.theme {
+  background-color: #3e3e3e;
+}
