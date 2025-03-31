@@ -137,8 +137,8 @@ a {
 }
 
 .intro-txt {
-  width: 100%;
-  font-size: calc(8px + 1.5vw);
+  width: 70%;
+  font-size: 20px;
   text-align: left;
 }
 
@@ -207,6 +207,7 @@ a {
 
 .hello {
   font-size: 5vw;
+  line-height: 1.2;
 }
 
 .introduction-text {
@@ -216,6 +217,10 @@ a {
   flex-direction: column;
   padding: 40px 40px 200px 40px;
   gap: 12px;
+}
+
+.introduction-paragraph {
+  padding-top: 20px;
 }
 
 .inner-image-container,
@@ -272,13 +277,11 @@ a {
   margin-left: -320px;
 }
 
-
 .profile-img-two {
-    width: 100%;
-    height: 600px;
-    object-fit: cover; /* Ensures the image covers the entire area of the container */
+  width: 100%;
+  height: 600px;
+  object-fit: cover; /* Ensures the image covers the entire area of the container */
 }
-
 
 .introduction-bottom-container {
   background-color: #3e3e3e;
@@ -318,7 +321,6 @@ a {
   z-index: -5;
 }
 
-
 @media only screen and (max-width: 1300px) {
   .introduction-text {
     font-size: 22px;
@@ -334,7 +336,7 @@ a {
     padding: 0px 20px 0px 20px;
     gap: 30px;
     font-size: 24px;
-  } 
+  }
 }
 
 @media only screen and (max-width: 950px) {
@@ -371,17 +373,32 @@ a {
     width: 400px;
     align-self: center;
   }
-  
-.introduction-top-container {
-  margin: 0px 0px 0px 0px;
-}
 
-.age {
-  margin-top: -30px;
-  margin-left: -260px;
-}
+  .introduction-top-container {
+    margin: 0px 0px 0px 0px;
+  }
 
-.background-block-one {
-  height: 1280px;
-}
+  .age {
+    margin-top: -30px;
+    margin-left: -260px;
+  }
+
+  .background-block-one {
+    height: 1280px;
+  }
+
+  .intro-txt {
+    width: 80%;
+    font-size: 18px;
+  }
+
+  .dev-bottom-list {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  .dev-top {
+    margin-bottom: 35px;
+  }
 }
