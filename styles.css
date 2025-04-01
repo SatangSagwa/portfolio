@@ -33,7 +33,7 @@ header {
 
 .title {
   font-size: 20px;
-  color: white;
+  color: #f4f1de;
 }
 
 ul {
@@ -52,78 +52,68 @@ nav {
 }
 
 a {
-  color: rgb(255, 255, 255);
+  color: #f4f1de;
   height: 100%;
 }
 
 .container-start {
   height: 100vh;
+  width: 100%;
   display: flex;
   flex-grow: 1;
   flex-direction: column;
   z-index: 0;
   align-items: center;
   position: relative;
-  padding-top: 80px;
-  width: 100%;
-}
-
-.background-images {
-  margin-top: 1vw;
-  width: 100%;
-  height: 100%;
-  display: flex; /* Enable flexbox on the parent container */
-  flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Centers the children horizontally */
+  padding: 100px;
 }
 
 .dev {
-  width: 90%;
+  width: 100%;
   display: flex; /* Enable flexbox on the parent container */
   flex-direction: column; /* Stack children vertically */
   justify-content: flex-start; /* Align children to the top of the container */
   align-items: center; /* Centers the children horizontally */
-  margin-top: 1vw;
+  margin-top: 30px;
   height: 100%;
-  gap: 30px;
-}
-
-.dev-bottom-list {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  gap: 90px; /* min: 20px, preferred: 5vw, max: 50px */
+  padding-top: 40px;
 }
 
 .dev-top,
 .dev-bottom {
-  z-index: 3;
-  padding: min(1%, 10px);
-  width: 80vw; /* Ensures both elements have the same width */
-  max-width: 800px;
+  width: 70%; /* Ensures both elements have the same width */
+}
+
+.dev-top {
+  z-index: 10;
 }
 
 .profile-img-one {
   position: absolute;
-  top: 170px;
-  left: 18vw;
-  width: 410px;
-  height: 490px;
+  top: 21%;
+  left: 13%;
+  width: 28%;
+  height: 70%;
+  min-width: 600px;
+  min-height: 800px;
   object-fit: cover;
   z-index: 2;
 }
 
 .container-quote {
   position: absolute;
-  top: calc(500px + 1.5vw);
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 12vw;
+  height: 22vh;
 
   z-index: 5;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   margin-left: 0;
+  font-size: 20px;
 }
 
 .quote {
@@ -137,9 +127,10 @@ a {
 }
 
 .intro-txt {
+  color: #f4f1de;
   width: 70%;
-  font-size: 20px;
   text-align: left;
+  align-self: flex-start;
 }
 
 .scroll-button {
@@ -150,7 +141,7 @@ a {
   align-items: center;
   width: 100px;
   height: 100px;
-  z-index: 2;
+  z-index: 20;
   text-decoration: none;
   border-radius: 30px;
   border-style: none;
@@ -176,7 +167,6 @@ a {
 .background {
   position: absolute;
   width: 100%;
-  height: 150px;
   bottom: 0; /* This anchors it to the bottom */
   left: 0; /* Ensures it spans the full width */
   z-index: -1;
@@ -184,25 +174,15 @@ a {
 
 .start-bottom-color {
   background-color: #3e3e3e;
-}
-
-@media only screen and (max-width: 630px) {
-  .profile-img-one {
-    position: absolute;
-    align-self: center;
-    width: 60%;
-    left: 50%;
-    transform: translateX(-50%); /*Is this correct?? */
-  }
+  height: 14%;
 }
 
 .introduction {
-  height: 120vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   align-items: flex-start;
   flex-grow: 1;
-  gap: 20px; /* Optional: Adds spacing between items */
 }
 
 .hello {
@@ -211,31 +191,33 @@ a {
 }
 
 .introduction-text {
-  color: #000000;
+  color: #3e3e3e;
   font-size: 25px;
   display: flex;
   flex-direction: column;
-  padding: 40px 40px 200px 40px;
+  padding: 100px 10px 0px 100px;
   gap: 12px;
+  height: 80vh;
 }
 
 .introduction-paragraph {
+  flex: 1;
   padding-top: 20px;
 }
 
-.inner-image-container,
-.introduction-text {
-  width: 50%;
-  height: 100%;
-  min-width: 300px;
+.hello,
+.introduction-paragraph {
+  margin-right: 10%;
 }
 
 .introduction-text-top {
-  flex: 1;
+  width: 100%;
+  height: fit-content;
 }
 
 .introduction-text-bottom {
-  margin-top: 0px;
+  flex: 1;
+  align-content: end;
 }
 
 .introduction-text-top,
@@ -254,151 +236,156 @@ a {
   height: fit-content;
   width: fit-content;
   align-items: center;
-  align-self: flex-end;
   padding: 10px 25px 5px 25px;
   margin: 0px 0px 0px 10px;
   gap: 30px;
   font-size: 28px;
+  z-index: 1;
+}
+
+.introduction-text,
+.introduction-image-container {
+  width: 50%;
 }
 
 .introduction-image-container {
+  height: fit-content;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  align-items: center;
-  height: 100%;
-  padding: 0px 20px 0px 0px;
+  padding: 100px 40px 0px 40px;
 }
 
 .age {
-  background-color: #e496a9;
+  color: #3e3e3e;
+  background-color: #efc583;
   position: absolute;
-  margin-top: 60px;
-  margin-left: -320px;
+  margin-top: -15px;
+  margin-left: -30px;
 }
 
-.profile-img-two {
-  width: 100%;
-  height: 600px;
-  object-fit: cover; /* Ensures the image covers the entire area of the container */
+.introduction-top-container {
+  height: 65vh;
 }
 
 .introduction-bottom-container {
   background-color: #3e3e3e;
-  margin-top: 0;
-  height: 100%;
-}
-
-.inner-image-container {
-  color: #000000;
-  font-size: 28px;
-  display: flex;
-  flex-direction: column;
-  margin: 0px;
-  width: 100%;
+  height: 18vh;
 }
 
 .introduction-bottom-container,
 .introduction-top-container {
-  width: 400px;
-  align-self: center;
+  width: clamp(500px, 50%, 650px);
+  margin-left: 5vw;
 }
 
-.introduction-top-container {
-  margin: 90px 0px 0px 0px;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
+.profile-img-two {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire area of the container */
 }
 
 .background-block-one {
   position: absolute;
-  background-color: rgb(255, 255, 255);
+  background-color: #f4f1de;
   width: 100%;
-  height: 780px;
-  z-index: -5;
+  height: 80vh;
+  z-index: -100;
 }
 
-@media only screen and (max-width: 1300px) {
-  .introduction-text {
-    font-size: 22px;
-    width: 50%;
-  }
-
-  .git-button {
-    display: flex;
-    height: fit-content;
-    width: fit-content;
-    align-items: center;
-    align-self: flex-end;
-    padding: 0px 20px 0px 20px;
-    gap: 30px;
-    font-size: 24px;
-  }
+.skills {
+  padding: 40px;
 }
 
-@media only screen and (max-width: 950px) {
-  .introduction {
-    height: fit-content;
-    flex-direction: column;
-    gap: 80px;
+.table {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+}
+
+.table-element {
+  background-color: #e496a9;
+  display: grid;
+  grid-template-rows: 100px;
+  grid-template-columns: repeat(1, 1fr) 100px;
+  border-radius: 50px;
+
+  grid-template-areas:
+    "year school school school"
+    "year school school school";
+}
+
+.education {
+  width: 50%;
+}
+
+.study-year {
+  background-color: blue;
+  grid-area: year;
+  align-self: center;
+}
+
+.school {
+  background-color: darkmagenta;
+  grid-area: school;
+  align-self: center;
+}
+
+@media (max-width: 2250px) {
+  .dev {
+    gap: 100px;
+    padding-top: 100px;
   }
 
-  .introduction-text {
-    height: fit-content;
-    width: 100%;
+  .dev-top,
+  .dev-bottom {
+    width: 75%;
   }
 
-  .inner-image-container {
-    height: 100vh;
+  .profile-img-one {
+    top: 21%;
+    left: 13%;
+    width: 28%;
+    height: 70%;
   }
 
-  .introduction-image-container {
-    width: 100%;
-    padding: 0px;
-  }
-
-  .hello {
-    font-size: 40px;
-  }
-  .introduction-text {
+  .container-quote {
+    bottom: 10%;
+    padding-left: 5%;
+    height: 22vh;
     font-size: 20px;
-    padding: 40px 40px 40px 40px;
+  }
+}
+
+@media (max-width: 1900px) {
+  .dev {
+    gap: 130px;
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 1625px) {
+  .dev {
+    gap: 165px;
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .dev {
+    gap: 220px;
+    padding-top: 30px;
   }
 
-  .introduction-bottom-container,
-  .introduction-top-container {
-    width: 400px;
-    align-self: center;
+  .profile-img-one {
+    top: 21%;
+    left: 50%;
+    width: 28%;
+    height: 70%;
+    transform: translateX(-50%);
   }
 
-  .introduction-top-container {
-    margin: 0px 0px 0px 0px;
-  }
-
-  .age {
-    margin-top: -30px;
-    margin-left: -260px;
-  }
-
-  .background-block-one {
-    height: 1280px;
-  }
-
-  .intro-txt {
-    width: 80%;
-    font-size: 18px;
-  }
-
-  .dev-bottom-list {
-    display: flex;
-    flex-direction: column;
-    gap: 70px;
-  }
-
-  .dev-top {
-    margin-bottom: 35px;
+  .container-quote {
+    padding-left: 18%;
+    height: 26vh;
   }
 }
