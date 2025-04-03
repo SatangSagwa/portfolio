@@ -13,6 +13,10 @@ body {
   font-size: 18px;
 }
 
+p {
+  font-size: 25px;
+}
+
 header {
   background-color: rgb(96, 154, 134);
   width: 100%;
@@ -58,6 +62,7 @@ a {
 
 .container-start {
   height: 100vh;
+  min-height: 1060px;
   width: 100%;
   display: flex;
   flex-grow: 1;
@@ -70,13 +75,13 @@ a {
 
 .dev {
   width: 100%;
-  display: flex; /* Enable flexbox on the parent container */
-  flex-direction: column; /* Stack children vertically */
-  justify-content: flex-start; /* Align children to the top of the container */
-  align-items: center; /* Centers the children horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   margin-top: 30px;
   height: 100%;
-  gap: 90px; /* min: 20px, preferred: 5vw, max: 50px */
+  gap: 8vh;
   padding-top: 40px;
 }
 
@@ -107,6 +112,7 @@ a {
   left: 0;
   width: 100%;
   height: 22vh;
+  min-height: 300px;
 
   z-index: 5;
   display: flex;
@@ -137,7 +143,7 @@ a {
   position: absolute;
   bottom: -3.5%;
   left: 50%;
-  transform: translateX(-50%); /*Is this correct?? */
+  transform: translateX(-50%);
   align-items: center;
   width: 100px;
   height: 100px;
@@ -167,14 +173,14 @@ a {
 .background {
   position: absolute;
   width: 100%;
-  bottom: 0; /* This anchors it to the bottom */
-  left: 0; /* Ensures it spans the full width */
+  bottom: 0;
+  left: 0;
   z-index: -1;
 }
 
 .start-bottom-color {
   background-color: #3e3e3e;
-  height: 14%;
+  height: 250px;
 }
 
 .introduction {
@@ -197,7 +203,7 @@ a {
   flex-direction: column;
   padding: 100px 10px 0px 100px;
   gap: 12px;
-  height: 80vh;
+  height: 80%;
 }
 
 .introduction-paragraph {
@@ -213,11 +219,13 @@ a {
 .introduction-text-top {
   width: 100%;
   height: fit-content;
+  min-height: 600px;
 }
 
 .introduction-text-bottom {
   flex: 1;
   align-content: end;
+  padding-bottom: 8vh; /*Height of git btn*/
 }
 
 .introduction-text-top,
@@ -264,12 +272,16 @@ a {
 }
 
 .introduction-top-container {
-  height: 65vh;
+  height: 65vh; /*height of img*/
+  min-height: 700px;
 }
 
 .introduction-bottom-container {
   background-color: #3e3e3e;
-  height: 18vh;
+  color: #f4f1de;
+  height: 18vh; /*Height of bottom*/
+  min-height: 200px;
+  padding: 20px;
 }
 
 .introduction-bottom-container,
@@ -289,6 +301,7 @@ a {
   background-color: #f4f1de;
   width: 100%;
   height: 80vh;
+  min-height: 900px;
   z-index: -100;
 }
 
@@ -387,5 +400,27 @@ a {
   .container-quote {
     padding-left: 18%;
     height: 26vh;
+  }
+}
+
+@media (max-height: 1340px) {
+  .dev {
+    gap: 5.5vh;
+  }
+}
+
+@media (max-height: 1240px) {
+  .dev {
+    gap: 4vh;
+  }
+}
+
+@media (max-height: 1080px) {
+  .dev {
+    gap: 0;
+  }
+
+  .profile-img-one {
+    min-height: 720px;
   }
 }
