@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+/*RESET*/
 * {
   margin: 0;
   padding: 0;
@@ -7,159 +11,73 @@
 }
 
 body {
-  background-color: rgb(96, 154, 134);
-  font-family: "Purple Purse";
-  line-height: 1.6;
+  background-color: #f4f1de;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5;
   font-size: 18px;
+  overflow-x: hidden;
+}
+
+
+/*GENERAL*/
+.main {
+  font-family: "Lora", "Public Sans", sans-serif;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title,
+a {
+  color: #f4f1de;
+  font-size: 24px;
+  font-family: "Lora", "Public Sans", sans-serif;
+}
+
+h1 {
+  color: #f4f1de;
+  font-size: 58px;
+}
+
+h2 {
+  color: #f4f1de;
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 35px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+  font-family: "Public Sans", sans-serif;
 }
 
 p {
-  font-size: 25px;
-}
-
-header {
-  background-color: rgb(96, 154, 134);
-  width: 100%;
-  height: 5rem;
-  padding: 10px 10%;
-  align-items: center;
-  position: fixed;
-  z-index: 1000;
-  text-wrap: nowrap;
-}
-
-.container {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-}
-
-.title {
-  font-size: 20px;
   color: #f4f1de;
+  font-size: 24px;
+  font-family: "Public Sans", sans-serif;
 }
 
-ul {
-  background-color: none;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 10px;
+.round {
+  border-radius: 50px;
 }
 
-nav {
-  display: flex;
-  justify-content: flex-end;
-  flex-grow: 1;
-  height: 40px;
-}
-
-a {
-  color: #f4f1de;
-  height: 100%;
-}
-
-.container-start {
-  height: 100vh;
-  min-height: 1060px;
-  width: 100%;
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  z-index: 0;
-  align-items: center;
-  position: relative;
-  padding: 100px;
-}
-
-.dev {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 30px;
-  height: 100%;
-  gap: 8vh;
-  padding-top: 40px;
-}
-
-.dev-top,
-.dev-bottom {
-  width: 70%; /* Ensures both elements have the same width */
-}
-
-.dev-top {
-  z-index: 10;
-}
-
-.profile-img-one {
-  position: absolute;
-  top: 21%;
-  left: 13%;
-  width: 28%;
-  height: 70%;
-  min-width: 600px;
-  min-height: 800px;
-  object-fit: cover;
-  z-index: 2;
-}
-
-.container-quote {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 22vh;
-  min-height: 300px;
-
-  z-index: 5;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-left: 0;
-  font-size: 20px;
-}
-
-.quote {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-grow: 0;
-  width: 50%;
-  height: 100%;
-  padding: 0 5%;
-}
-
-.intro-txt {
-  color: #f4f1de;
-  width: 70%;
-  text-align: left;
-  align-self: flex-start;
-}
-
-.scroll-button {
-  position: absolute;
-  bottom: -3.5%;
-  left: 50%;
-  transform: translateX(-50%);
-  align-items: center;
-  width: 100px;
-  height: 100px;
-  z-index: 20;
-  text-decoration: none;
-  border-radius: 30px;
-  border-style: none;
-}
-
-.get-in-touch,
-.theme,
 button,
-.age,
-a {
-  border-radius: 100px;
-  padding: 10px 10px;
+.button {
+  display: inline-block;
+  padding: 3px 10px;
+  margin: 0 3px;
+  background: none;
+  border: none;
 }
 
 .get-in-touch {
@@ -170,257 +88,356 @@ a {
   background-color: #3e3e3e;
 }
 
-.background {
-  position: absolute;
+.full-container {
   width: 100%;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.start-bottom-color {
-  background-color: #3e3e3e;
-  height: 250px;
-}
-
-.introduction {
-  height: 100vh;
-  width: 100%;
+  height: 85vh;
+  min-height: 900px;
   display: flex;
-  align-items: flex-start;
-  flex-grow: 1;
-}
-
-.hello {
-  font-size: 5vw;
-  line-height: 1.2;
-}
-
-.introduction-text {
-  color: #3e3e3e;
-  font-size: 25px;
-  display: flex;
-  flex-direction: column;
-  padding: 100px 10px 0px 100px;
-  gap: 12px;
-  height: 80%;
-}
-
-.introduction-paragraph {
-  flex: 1;
-  padding-top: 20px;
-}
-
-.hello,
-.introduction-paragraph {
-  margin-right: 10%;
-}
-
-.introduction-text-top {
-  width: 100%;
-  height: fit-content;
-  min-height: 600px;
-}
-
-.introduction-text-bottom {
-  flex: 1;
-  align-content: end;
-  padding-bottom: 8vh; /*Height of git btn*/
-}
-
-.introduction-text-top,
-.introduction-text-bottom {
-  margin: 0px 0px 0px 10px;
-}
-
-.github-img {
-  width: 36px;
-  height: 36px;
-}
-
-.git-button {
-  background-color: #e496a9;
-  display: flex;
-  height: fit-content;
-  width: fit-content;
   align-items: center;
-  padding: 10px 25px 5px 25px;
-  margin: 0px 0px 0px 10px;
-  gap: 30px;
-  font-size: 28px;
-  z-index: 1;
+  justify-content: center;
 }
 
-.introduction-text,
-.introduction-image-container {
+.half-container {
   width: 50%;
+  height: 100%;
+  padding: 40px 10px;
 }
 
-.introduction-image-container {
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  padding: 100px 40px 0px 40px;
-}
-
-.age {
-  color: #3e3e3e;
-  background-color: #efc583;
-  position: absolute;
-  margin-top: -15px;
-  margin-left: -30px;
-}
-
-.introduction-top-container {
-  height: 65vh; /*height of img*/
-  min-height: 700px;
-}
-
-.introduction-bottom-container {
-  background-color: #3e3e3e;
-  color: #f4f1de;
-  height: 18vh; /*Height of bottom*/
-  min-height: 200px;
+.inner-container {
+  position: relative;
+  background-color: #609a86;
+  height: 80%;
+  width: 65%;
+  min-height: 1000px;
+  align-content: center;
+  justify-items: center;
+  border-radius: 100px;
   padding: 20px;
 }
 
-.introduction-bottom-container,
-.introduction-top-container {
-  width: clamp(500px, 50%, 650px);
-  margin-left: 5vw;
+.inner-container,
+.divider-line {
+  min-width: 1300px;
 }
 
-.profile-img-two {
+.intro,
+.skills,
+.contact {
+  border-radius: 100px;
+  padding: 20px;
+  display: flex;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.divider-line {
+  width: 70%;
+  height: auto;
+  overflow: visible;
+}
+
+/*HEADER*/
+
+header {
+  background-color: rgb(96, 154, 134);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 10000;
+  width: 100vw;
+  height: 75px;
+}
+
+.title {
+  height: 100%;
+  width: fit-content;
+  align-content: center;
+  min-width: 330px;
+}
+
+nav {
+  flex: 1;
+  height: 100%;
+  align-items: center;
+  max-width: 50%;
+}
+
+ul {
+  height: 100%;
+  align-self: flex-end;
+  justify-self: end;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  min-width: 530px;
+}
+
+.profile-one {
+  position: absolute;
+  left: 3%;
+  top: 15%;
+  z-index: 50;
+  overflow: hidden;
+  width: 39%;
+  height: 72%;
+  border-radius: inherit;
+}
+
+img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image covers the entire area of the container */
+  object-fit: cover;
 }
 
-.background-block-one {
-  position: absolute;
-  background-color: #f4f1de;
+.dev-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 80vh;
-  min-height: 900px;
-  z-index: -100;
+  height: 100%;
+}
+
+.dev-vector {
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  display: flex;
+  transform: scale(1.2);
+  width: 100%;
+  height: 100%;
+  max-width: 80%;
+  max-height: 90%;
+  gap: 0.5vw;
+  z-index: 10;
+}
+
+.in-front {
+  z-index: 100;
+}
+
+.scroll-btn {
+  position: absolute;
+  bottom: -7%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  height: fit-content;
+  background: none;
+  border: none;
+  z-index: 150;
+}
+
+.scroll-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.left-intro {
+  display: flex;
+  flex-direction: column;
+  color: #f4f1de;
+}
+
+.intro-txt {
+  flex: 1;
+}
+
+.intro-txt,
+.top-skills,
+.contact-txt {
+  padding-left: 50px;
+}
+
+.git {
+  background-color: #e496a9;
+  width: 100%;
+  height: 15%;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.git-logo {
+  display: flex;
+  align-items: center;
+  min-width: 60px;
+}
+
+.git-img {
+  transform: translateX(-50%);
+}
+
+.right-intro {
+  color: #3e3e3e;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.age {
+  position: absolute;
+  background-color: #efc583;
+  height: 120px;
+  width: 15%;
+  min-width: 250px;
+  max-width: 300px;
+  align-content: center;
+  justify-items: center;
+  z-index: 10;
+  text-align: center;
+  line-height: 45px;
+}
+
+.profile-two {
+  align-self: flex-start;
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  flex: 1;
+  margin-top: 70px;
+}
+
+.img-text {
+  background-color: #efc583;
+  width: 100%;
+  height: 15%;
+  padding: 10px 25px;
+  align-content: center;
+  justify-items: center;
 }
 
 .skills {
-  padding: 40px;
-}
-
-.table {
-  background-color: aqua;
   display: flex;
   flex-direction: column;
+  padding: 50px 30px;
+  color: #3e3e3e;
 }
 
-.table-element {
-  background-color: #e496a9;
-  display: grid;
-  grid-template-rows: 100px;
-  grid-template-columns: repeat(1, 1fr) 100px;
-  border-radius: 50px;
+.bottom-skills {
+  display: flex;
+  flex: 1;
+  gap: 10px;
+}
 
-  grid-template-areas:
-    "year school school school"
-    "year school school school";
+.left-skills {
+  min-width: 700px;
+}
+
+.right-skills {
+  min-width: 600px;
+}
+
+.left-skills,
+.right-skills {
+  flex: 1;
+  height: 100%;
+}
+
+.education,
+.skill-areas {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
 }
 
 .education {
-  width: 50%;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
 }
 
-.study-year {
-  background-color: blue;
-  grid-area: year;
-  align-self: center;
+.skill-areas {
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 100%;
 }
 
-.school {
-  background-color: darkmagenta;
-  grid-area: school;
-  align-self: center;
+.square {
+  background-color: #efc583;
+  border-radius: 50px;
+  aspect-ratio: 1;
+  padding: 50px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-@media (max-width: 2250px) {
-  .dev {
-    gap: 100px;
-    padding-top: 100px;
-  }
-
-  .dev-top,
-  .dev-bottom {
-    width: 75%;
-  }
-
-  .profile-img-one {
-    top: 21%;
-    left: 13%;
-    width: 28%;
-    height: 70%;
-  }
-
-  .container-quote {
-    bottom: 10%;
-    padding-left: 5%;
-    height: 22vh;
-    font-size: 20px;
-  }
+.square,
+.area-box {
+  height: 80%;
 }
 
-@media (max-width: 1900px) {
-  .dev {
-    gap: 130px;
-    padding-top: 80px;
-  }
+.education-text {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-@media (max-width: 1625px) {
-  .dev {
-    gap: 165px;
-    padding-top: 80px;
-  }
+.area-box {
+  border-radius: 50px;
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
 }
 
-@media (max-width: 1350px) {
-  .dev {
-    gap: 220px;
-    padding-top: 30px;
-  }
-
-  .profile-img-one {
-    top: 21%;
-    left: 50%;
-    width: 28%;
-    height: 70%;
-    transform: translateX(-50%);
-  }
-
-  .container-quote {
-    padding-left: 18%;
-    height: 26vh;
-  }
+.skills-text {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 3%;
+  padding-left: 10px;
 }
 
-@media (max-height: 1340px) {
-  .dev {
-    gap: 5.5vh;
-  }
+.development {
+  background-color: #e496a9;
 }
 
-@media (max-height: 1240px) {
-  .dev {
-    gap: 4vh;
-  }
+.stack {
+  background-color: #f4f1de;
 }
 
-@media (max-height: 1080px) {
-  .dev {
-    gap: 0;
-  }
-
-  .profile-img-one {
-    min-height: 720px;
-  }
+.contact {
+  display: flex;
+  padding: 50px 30px;
 }
+
+.left-contact {
+}
+
+.contact-txt {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.contact-info {
+  background-color: #e496a9;
+  width: 80%;
+  height: 70%;
+  padding: 20px;
+  justify-self: center;
+}
+
