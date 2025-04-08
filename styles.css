@@ -8,6 +8,8 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  border: none;
+  outline: none;
 }
 
 body {
@@ -18,7 +20,6 @@ body {
   overflow-x: hidden;
 }
 
-
 /*GENERAL*/
 .main {
   font-family: "Lora", "Public Sans", sans-serif;
@@ -28,9 +29,23 @@ body {
 }
 
 .title,
-a {
+a,
+label {
   color: #f4f1de;
   font-size: 24px;
+  font-family: "Lora", "Public Sans", sans-serif;
+}
+
+.submit button {
+  color: #3e3e3e;
+  font-size: 24px;
+  font-family: "Lora", "Public Sans", sans-serif;
+}
+
+::placeholder,
+.error {
+  color: #3e3e3e;
+  font-size: 18px;
   font-family: "Lora", "Public Sans", sans-serif;
 }
 
@@ -90,7 +105,7 @@ button,
 
 .full-container {
   width: 100%;
-  height: 85vh;
+  height: 80vh;
   min-height: 900px;
   display: flex;
   align-items: center;
@@ -128,11 +143,18 @@ button,
   display: flex;
 }
 
+.start {
+  height: 85vh;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
 .divider {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100px;
+  margin-bottom: 50px;
 }
 
 .divider-line {
@@ -259,6 +281,10 @@ img {
   padding-left: 50px;
 }
 
+.intro-txt p {
+  padding: 40px 60px 0px 0px;
+}
+
 .git {
   background-color: #e496a9;
   width: 100%;
@@ -312,7 +338,7 @@ img {
 }
 
 .img-text {
-  background-color: #efc583;
+  background-color: #f4f1de;
   width: 100%;
   height: 15%;
   padding: 10px 25px;
@@ -423,9 +449,6 @@ img {
   padding: 50px 30px;
 }
 
-.left-contact {
-}
-
 .contact-txt {
   height: 100%;
   display: flex;
@@ -434,10 +457,75 @@ img {
 }
 
 .contact-info {
-  background-color: #e496a9;
+  background-color: #efc583;
   width: 80%;
   height: 70%;
   padding: 20px;
   justify-self: center;
 }
 
+.contact-info p {
+  color: #3e3e3e;
+}
+
+.right-contact {
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-form {
+  background-color: #e496a9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  height: 80%;
+  width: 90%;
+  padding-top: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+input,
+textarea {
+  width: 80%;
+  padding: 20px;
+}
+
+.submit {
+  background-color: #f4f1de;
+  padding: 20px 40px;
+  width: 50%;
+  text-align: center;
+}
+
+footer {
+  background-color: #609a86;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100000;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.dash {
+  margin: 0 15px;
+}
+
+.bottom {
+  margin-bottom: 80px;
+}

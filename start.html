@@ -842,8 +842,8 @@
                     <section>
                       <h5>AGILE METHODOLOGY</h5>
                       <h6>
-                        Experienced in implementing Agile methodologies,
-                        <br />with a strong focus on the Scrum framework.
+                        Experienced in implementing Agile methodologies, with a
+                        strong focus on the Scrum framework.
                       </h6>
                     </section>
                   </section>
@@ -868,24 +868,76 @@
         </svg>
       </section>
 
-      <section class="full-container">
+      <section class="full-container bottom">
         <section class="inner-container contact">
           <section class="half-container left-contact">
             <section class="contact-txt">
               <h2>CONTACT ME</h2>
               <section class="round contact-info">
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially unchanged.
                 </p>
               </section>
             </section>
           </section>
-          <section class="half-container right-intro">
-            <section class="form">
+
+          <section class="half-container right-contact">
+            <form class="round contact-form" id="contact-form">
+              <section class="form-group">
+                <label for="name">Name:</label>
+                <input
+                  class="round"
+                  type="text"
+                  id="name"
+                  placeholder="Enter your name"
+                />
+                <span class="error" id="name-error">Name is required!</span>
+              </section>
+
+              <section class="form-group">
+                <label for="email">Email:</label>
+                <input
+                  class="round"
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email"
+                />
+                <span class="error" id="email-error">Email is required!</span>
+              </section>
+
+              <section class="form-group">
+                <label for="message">Message:</label>
+                <textarea
+                  class="round"
+                  rows="15"
+                  name="message"
+                  required,
+                  placeholder="Write your message..."
+                ></textarea>
+                <span class="error" id="message-error"
+                  >Message is required!</span
+                >
+              </section>
+            </form>
+            <section class="round submit">
+              <button type="submit" id="submitBtn">Send</button>
             </section>
           </section>
         </section>
       </section>
     </section>
+
+    <footer>
+      <p>
+        Emilia Ivarsson <span class="dash">-</span> &copy; 2025
+        <span class="dash">-</span> All Rights Reserved.
+      </p>
+    </footer>
   </body>
 </html>
