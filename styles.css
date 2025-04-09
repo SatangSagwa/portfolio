@@ -423,7 +423,7 @@ img {
   width: 80%;
   padding: 20px;
   display: flex;
-  align-items: flex-start;
+  justify-content: center;
 }
 
 .skills-text {
@@ -433,7 +433,8 @@ img {
   flex-direction: column;
   height: 100%;
   gap: 3%;
-  padding-left: 10px;
+
+  justify-content: center;
 }
 
 .development {
@@ -598,14 +599,17 @@ footer {
   }
 
   h4 {
+    background-color: #609a86;
     font-size: 20px;
   }
 
   h5 {
+    background-color: #3b514a;
     font-size: 16px;
   }
 
   h6 {
+    background-color: #1b201e;
     font-size: 13px;
   }
 
@@ -636,6 +640,15 @@ footer {
   .divider-line,
   .header-inner {
     width: 95%;
+  }
+
+  .education-text {
+    gap: 0.5vh;
+  }
+
+  .skills-text {
+    gap: 0;
+    justify-content: center;
   }
 
   .contact-form {
