@@ -173,14 +173,14 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0px 16vw;
 }
 
 .header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 60%;
-  padding: 0 100px;
+  width: 100%;
 }
 
 .title {
