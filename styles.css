@@ -663,7 +663,7 @@ footer {
   }
 }
 
-@media (max-width: 844px) {
+@media (max-width: 1000px) {
   header {
     height: 45px;
   }
