@@ -569,7 +569,8 @@ footer {
 
   .square,
   .area-box {
-    height: 90%;
+    height: 100%;
+    min-height: fit-content;
   }
 
   .bottom-skills {
@@ -581,7 +582,8 @@ footer {
     width: 70%;
   }
 
-  .education {
+  .education,
+  .skill-areas {
     gap: 10px;
   }
 
