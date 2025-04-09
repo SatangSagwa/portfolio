@@ -9,7 +9,7 @@
   list-style: none;
   text-decoration: none;
   border: none;
-  outline: none;
+  outline: 1px solid red;
 }
 
 body {
