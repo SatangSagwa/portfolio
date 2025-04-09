@@ -280,7 +280,6 @@ img {
   flex: 1;
 }
 
-
 .intro-txt p {
   padding: 40px 60px 0px 0px;
 }
@@ -575,15 +574,9 @@ footer {
     margin-top: 20px;
   }
 
-  .square,
-  .area-box {
-    height: 70%;
-  }
-
   .left-skills {
     flex: 1;
     width: 50%;
-    gap: 20px;
   }
 
   .education,
@@ -593,7 +586,11 @@ footer {
 
   .right-skills {
     flex: 1;
-    width: 100%;
+    width: 90%;
+  }
+
+  .square {
+    height: 80%;
   }
 
   textarea.message-area {
