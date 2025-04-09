@@ -621,17 +621,12 @@ footer {
 
 /*VERTICAL IPAD*/
 @media (max-width: 1024px) {
-  .start {
-    margin-top: 40px;
-  }
-
   .full-container {
     height: 60vh;
   }
 
   .inner-container {
     height: 90%;
-    min-height: fit-content;
   }
 
   .inner-container,
