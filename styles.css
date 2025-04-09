@@ -344,6 +344,9 @@ img {
   padding: 10px 25px;
   align-content: center;
   justify-items: center;
+}
+
+.img-text h4 {
   text-align: center;
 }
 
