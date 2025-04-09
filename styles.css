@@ -9,7 +9,6 @@
   list-style: none;
   text-decoration: none;
   border: none;
-  outline: 1px solid red;
 }
 
 body {
@@ -30,7 +29,8 @@ body {
 
 .title,
 a,
-label {
+label,
+button {
   color: #f4f1de;
   font-size: 24px;
   font-family: "Lora", "Public Sans", sans-serif;
@@ -88,7 +88,6 @@ p {
 
 button,
 .button {
-  display: inline-block;
   padding: 3px 10px;
   margin: 0 3px;
   background: none;
@@ -168,39 +167,36 @@ button,
 
 /*HEADER*/
 
+/* HEADER */
 header {
   background-color: rgb(96, 154, 134);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: fixed;
   z-index: 10000;
-  width: 100vw;
+  width: 100%;
   height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 100px;
 }
 
 .title {
-  height: 100%;
-  width: fit-content;
-  align-content: center;
-  min-width: 330px;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
-nav {
-  flex: 1;
-  height: 100%;
-  align-items: center;
-  max-width: 50%;
-}
-
-ul {
-  height: 100%;
-  align-self: flex-end;
-  justify-self: end;
+nav ul {
   display: flex;
-  gap: 40px;
   align-items: center;
-  min-width: 540px;
+  gap: 24px;
+  list-style: none;
 }
 
 /*START*/
