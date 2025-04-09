@@ -342,8 +342,9 @@ img {
   width: 100%;
   height: 15%;
   padding: 10px 25px;
-  align-content: center;
-  justify-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .img-text h4 {
