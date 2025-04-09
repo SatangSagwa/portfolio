@@ -538,10 +538,6 @@ footer {
 }
 
 @media (max-height: 1080px) {
-  .inner-container {
-    min-height: 800px;
-  }
-
   h4 {
     font-size: 24px;
   }
@@ -566,10 +562,6 @@ footer {
 
 /*Horizontal Ipad*/
 @media (max-width: 1366px) {
-  .inner-container {
-    height: 90vh;
-  }
-
   .start {
     margin-top: 20px;
   }
@@ -624,5 +616,27 @@ footer {
 
   .scroll-btn {
     scale: 0.7;
+  }
+}
+
+/*VERTICAL IPAD*/
+@media (max-width: 1024px) {
+  .start {
+    margin-top: 40px;
+  }
+
+  .full-container {
+    height: 60vh;
+  }
+
+  .inner-container {
+    height: 90%;
+    min-height: fit-content;
+  }
+
+  .inner-container,
+  .divider-line,
+  .header-inner {
+    width: 95%;
   }
 }
