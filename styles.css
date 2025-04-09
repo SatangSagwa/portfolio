@@ -564,7 +564,11 @@ footer {
 
 @media (max-width: 1366px) and (max-height: 1024px) {
   .inner-container {
-    min-height: 800px;
+    height: 90vh;
+  }
+
+  .start {
+    margin-top: 20px;
   }
 
   .square,
