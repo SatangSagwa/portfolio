@@ -570,7 +570,6 @@ footer {
   .square,
   .area-box {
     height: 100%;
-    min-height: fit-content;
   }
 
   .square {
