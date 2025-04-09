@@ -572,10 +572,6 @@ footer {
     height: 100%;
   }
 
-  .square {
-    margin-left: 10px;
-  }
-
   .left-skills {
     flex: 0;
     width: 70%;
