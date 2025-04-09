@@ -284,7 +284,8 @@ img {
   padding: 40px 60px 0px 0px;
 }
 
-.git {
+.git,
+.img-text {
   background-color: #e496a9;
   width: 100%;
   height: 15%;
@@ -299,7 +300,7 @@ img {
 .git-logo {
   display: flex;
   align-items: center;
-  min-width: 60px;
+  min-width: 0px;
 }
 
 .git-img {
@@ -338,14 +339,6 @@ img {
 
 .img-text {
   background-color: #f4f1de;
-  width: 100%;
-  height: 15%;
-  padding: 10px 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
 }
 
 .img-text h4 {
@@ -667,5 +660,109 @@ footer {
 
   p {
     font-size: 18px;
+  }
+}
+
+@media (max-width: 844px) {
+  header {
+    height: 45px;
+  }
+
+  .full-container {
+    height: 120vh;
+  }
+
+  .inner-container {
+    height: 95%;
+  }
+
+  .inner-container,
+  .divider-line,
+  .header-inner {
+    width: 80%;
+  }
+
+  .dev-vector {
+    transform: scale(1);
+  }
+
+  .scroll-btn {
+    scale: 0.4;
+  }
+
+  .intro-txt p {
+    padding: 10px 60px 0px 0px;
+  }
+
+  .age {
+    min-width: 0px;
+    height: 55px;
+    width: 20%;
+    line-height: 22px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  h5 {
+    font-size: 12px;
+  }
+
+  h6 {
+    font-size: 10px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  label,
+  .submit button {
+    font-size: 18px;
+  }
+
+  .title,
+  a,
+  .button {
+    font-size: 12px;
+  }
+
+  .git-logo {
+    scale: 0.6;
+  }
+
+  .education,
+  .skill-areas {
+    width: 100%;
+    height: 80%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .profile-one {
+    left: 10%;
+    top: 10%;
+    width: 45%;
+    height: 80%;
+  }
+
+  .profile-two {
+    width: 100%;
+    flex: 1;
+    margin-top: 20px;
   }
 }
