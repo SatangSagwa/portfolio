@@ -573,8 +573,8 @@ footer {
     min-height: fit-content;
   }
 
-  .bottom-skills {
-    gap: 0px;
+  .square {
+    margin-left: 10px;
   }
 
   .left-skills {
