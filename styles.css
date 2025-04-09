@@ -573,7 +573,7 @@ footer {
 
   .square,
   .area-box {
-    height: 90%;
+    height: 85%;
   }
 
   .left-skills {
@@ -583,7 +583,7 @@ footer {
 
   .education,
   .skill-areas {
-    gap: 10px;
+    gap: 20px;
   }
 
   .right-skills {
