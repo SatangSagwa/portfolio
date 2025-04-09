@@ -562,7 +562,8 @@ footer {
   }
 }
 
-@media (max-width: 1366px) and (max-height: 1024px) {
+/*Horizontal Ipad*/
+@media (max-width: 1366px) {
   .inner-container {
     height: 90vh;
   }
@@ -592,7 +593,7 @@ footer {
   }
 
   textarea.message-area {
-    height: calc(1.5em * 10);
+    height: calc(1.5em * 7);
   }
 
   h4 {
@@ -616,6 +617,7 @@ footer {
   }
 }
 
+/*Vertical Ipad*/
 @media (max-width: 1024px) and (max-height: 1366px) {
   .intro-txt,
   .top-skills,
