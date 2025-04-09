@@ -393,7 +393,6 @@ img {
 
 .square {
   background-color: #efc583;
-  border-radius: 50px;
   aspect-ratio: 1;
   padding: 50px 20px;
 
@@ -418,7 +417,6 @@ img {
 }
 
 .area-box {
-  border-radius: 50px;
   width: 80%;
   padding: 20px;
   display: flex;
@@ -484,14 +482,14 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
   height: 80%;
   width: 90%;
-  padding-top: 15px;
+  padding: 25px 5px;
 }
 
 .form-group {
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
   width: 100%;
@@ -594,6 +592,15 @@ footer {
 
   textarea.message-area {
     height: calc(1.5em * 7);
+  }
+
+  .contact-form {
+    margin-top: 10%;
+    height: 75%;
+  }
+
+  .form-group {
+    flex: 1;
   }
 
   h4 {
@@ -745,8 +752,9 @@ footer {
   }
 
   .contact-form {
-    gap: 8px;
-    height: 560px;
+    gap: 10px;
+    height: 90%;
+    padding-bottom: 20px;
   }
 
   .scroll-btn {
