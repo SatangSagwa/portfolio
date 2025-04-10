@@ -27,10 +27,11 @@ body {
   flex-direction: column;
 }
 
-.title,
 a,
 label,
-button {
+button,
+.button,
+.theme {
   color: #f4f1de;
   font-size: 24px;
   font-family: "Lora", "Public Sans", sans-serif;
@@ -59,8 +60,10 @@ h2 {
   font-size: 50px;
 }
 
-h3 {
+h3,
+.title {
   font-size: 35px;
+  font-family: "Lora", "Public Sans", sans-serif;
 }
 
 h4 {
@@ -82,16 +85,26 @@ p {
   font-family: "Public Sans", sans-serif;
 }
 
-.round {
-  border-radius: 50px;
+a,
+.theme {
+  font-size: 24px;
+  color: #c5be91;
+}
+
+.no-wrap-line {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 button,
 .button {
-  padding: 3px 10px;
-  margin: 0 3px;
   background: none;
   border: none;
+}
+
+.round {
+  border-radius: 50px;
 }
 
 .get-in-touch {
@@ -162,7 +175,11 @@ button,
   width: 80%;
 }
 
-/*HEADER*/
+.intro-txt,
+.top-skills,
+.contact-txt {
+  padding-left: 20px;
+}
 
 /* HEADER */
 header {
@@ -174,29 +191,36 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 100px;
 }
 
 .header-inner {
+  background-color: aqua;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .title {
-  font-size: 1.5rem;
+  background-color: #e496a9;
 }
 
 nav ul {
+  background-color: rgb(24, 122, 122);
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  gap: 24px;
+  gap: 30px;
   list-style: none;
 }
 
-.intro-txt,
-.top-skills,
-.contact-txt {
-  padding-left: 20px;
+.menu-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  line-height: 1;
+  cursor: pointer;
 }
 
 /*START*/
@@ -299,7 +323,6 @@ img {
 .git-logo {
   display: flex;
   align-items: center;
-  min-width: 0px;
 }
 
 .git-img {
@@ -359,6 +382,8 @@ img {
 .bottom-skills {
   display: flex;
   flex: 1;
+  height: 90%;
+  background-color: #3e3e3e;
 }
 
 .left-skills,
@@ -386,36 +411,42 @@ img {
   grid-template-columns: 100%;
 }
 
-.square {
-  background-color: #efc583;
-  aspect-ratio: 1;
-  padding: 50px 20px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .square,
 .area-box {
   height: 90%;
+  overflow-x: hidden; /* No horizontal scroll */
+  overflow-y: auto;
+}
+
+.square {
+  padding: 10px;
+  background-color: #efc583;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
 }
 
 .education-text {
+  background-color: #e496a9;
+  width: 100%;
   flex: 1;
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 2vh;
-  padding: 50px 0px;
+  justify-content: space-around;
+  word-wrap: break-word;
+}
+
+.education-text h5,
+.education-text h6 {
+  background-color: #66bd94;
 }
 
 .area-box {
   width: 80%;
   padding: 20px;
   display: flex;
-  justify-content: center;
 }
 
 .skills-text {
@@ -424,9 +455,7 @@ img {
   display: flex;
   flex-direction: column;
   height: 100%;
-  gap: 3%;
-
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .development {
@@ -617,6 +646,10 @@ footer {
 
 /*VERTICAL IPAD*/
 @media (max-width: 1024px) {
+  header {
+    padding: 1vh 0px;
+  }
+
   .full-container {
     height: 60vh;
   }
@@ -676,10 +709,6 @@ footer {
 }
 
 @media (max-width: 1000px) {
-  header {
-    height: 45px;
-  }
-
   .full-container {
     height: 120vh;
   }
@@ -748,21 +777,18 @@ footer {
 
   .title,
   a,
-  .button {
-    font-size: 12px;
+  .button,
+  .theme {
+    font-size: 15px;
   }
 
   .git-logo {
-    scale: 0.6;
+    scale: 0.5;
   }
 
-  .education,
-  .skill-areas {
-    width: 100%;
-    height: 80%;
-    display: grid;
-    align-items: center;
-    justify-items: center;
+  .git {
+    gap: 0px;
+    padding: 0px 0px;
   }
 
   .profile-one {
@@ -776,5 +802,24 @@ footer {
     width: 100%;
     flex: 1;
     margin-top: 20px;
+  }
+
+  .square,
+  .area-box {
+    height: 100%;
+  }
+
+  .skills-text {
+    flex: 1;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: flex-start;
+    margin-bottom: 90px;
+  }
+
+  .round {
+    border-radius: 30px;
   }
 }
