@@ -708,6 +708,7 @@ footer {
   }
 }
 
+/*HORIZONTAL PHONE*/
 @media (max-width: 1000px) {
   .full-container {
     height: 120vh;
@@ -835,21 +836,47 @@ footer {
   }
 
   ::placeholder,
-.error {
-  font-size: 10px;
+  .error {
+    font-size: 10px;
+  }
+
+  input,
+  textarea {
+    padding: 10px 10px;
+  }
+
+  .submit {
+    padding: 10px 0px;
+  }
+
+  textarea.message-area {
+    height: calc(1.5em * 3);
+  }
 }
 
-input,
-textarea {
-  padding: 10px 10px;
-}
+/*VERTICAL PHONE*/
+@media (max-width: 1000px) {
+  .full-container {
+    height: 100vh;
+    min-height: fit-content;
+  }
 
-.submit {
-  padding: 10px 0px;
-}
+  .start {
+    height: 50vh;
+    min-height: 0px;
+  }
 
-textarea.message-area {
-  height: calc(1.5em * 3);
-}
+  .inner-container {
+    height: 100%;
+  }
 
+  .half-container {
+    width: 100%;
+  }
+
+  .intro,
+  .flex,
+  .contact {
+    flex-direction: column;
+  }
 }
