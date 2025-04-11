@@ -20,3 +20,18 @@ document.querySelector(".get-in-touch").addEventListener("click", function (e) {
     .querySelector(".contactScroll")
     .scrollIntoView({ behavior: "smooth" });
 });
+
+const themeButton = document.querySelector(".theme");
+const gitLogo = document.querySelector(".git-img");
+
+themeButton?.addEventListener("click", () => {
+  document.body.classList.toggle("dark-theme");
+
+  if (document.body.classList.contains("dark-theme")) {
+    themeButton.textContent = "Light";
+    gitLogo.src = "https://i.ibb.co/3mDLS9RZ/Github.png";
+  } else {
+    themeButton.textContent = "Dark";
+    gitLogo.src = "https://i.ibb.co/fdkPtJK3/Github-1.png";
+  }
+});
