@@ -855,19 +855,15 @@ footer {
 }
 
 /*VERTICAL PHONE*/
-@media (max-width: 1000px) {
+@media (max-width: 500px) {
   .full-container {
     height: 100vh;
     min-height: fit-content;
   }
 
   .start {
-    height: 50vh;
+    height: 80vh;
     min-height: 0px;
-  }
-
-  .inner-container {
-    height: 100%;
   }
 
   .half-container {
@@ -878,5 +874,10 @@ footer {
   .flex,
   .contact {
     flex-direction: column;
+    padding-left: 0px;
+  }
+
+  .left-intro {
+    background-color: #3e3e3e;
   }
 }
