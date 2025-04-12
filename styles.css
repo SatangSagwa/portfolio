@@ -15,7 +15,7 @@
 
 body {
   background-color: #f4f1de;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Lora", "Public Sans", sans-serif;
   line-height: 1.5;
   font-size: 18px;
   overflow-x: hidden;
@@ -23,13 +23,6 @@ body {
 }
 
 /*GENERAL*/
-.main {
-  font-family: "Lora", "Public Sans", sans-serif;
-  padding-top: 60px;
-  display: flex;
-  flex-direction: column;
-}
-
 a,
 button,
 .button,
@@ -183,7 +176,7 @@ button,
 
 .start {
   margin-bottom: 10px;
-  margin-top: 10px;
+  margin-top: 80px;
 }
 
 .bottom {
@@ -231,6 +224,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 0 100px;
+  top: 0;
 }
 
 .header-inner {
@@ -814,7 +808,7 @@ body.dark-theme .theme:hover {
 /*Horizontal Ipad*/
 @media (max-width: 1366px) {
   .start {
-    margin-top: 20px;
+    margin-top: 60px;
   }
 
   .left-skills {
