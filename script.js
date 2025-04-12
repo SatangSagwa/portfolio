@@ -33,8 +33,10 @@ const gitLogo = document.querySelector(".git-img");
 const profileImgOne = document.querySelector(".profile-one img");
 const profileImgTwo = document.querySelector(".profile-two img");
 
+/* Gets theme */
 const savedTheme = localStorage.getItem("theme");
 
+/* Loads theme */
 if (savedTheme === "dark") {
   document.body.classList.add("dark-theme");
   loadTheme("dark");
@@ -43,6 +45,7 @@ if (savedTheme === "dark") {
   loadTheme("light");
 }
 
+/* Sets theme and saves. */
 themeButton?.addEventListener("click", () => {
   document.body.classList.toggle("dark-theme");
 
@@ -57,6 +60,7 @@ themeButton?.addEventListener("click", () => {
   }
 });
 
+/* Sets theme for buttons and images */
 function loadTheme(theme) {
   if (theme === "dark") {
     themeButton.textContent = "Light";
@@ -80,8 +84,6 @@ document.addEventListener("DOMContentLoaded", function () {
   function visualizeDom() {
     domVisElement.textContent("DOM visualization");
     bodyElement.appendChild(domVisElement);
-
-    console.log("DOM visualization");
   }
 
   const form = document.getElementById("contact-form");
@@ -91,6 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const submitBtn = document.getElementById("submitBtn");
   const response = document.getElementById("response");
 
+  /* Checks for click on submit/send */
   submitBtn.addEventListener("click", function () {
     if (validateForm()) {
       form.reset();
@@ -98,6 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  /* Response message for 7 sec */
   function popupResponse() {
     response.style.display = "block";
     setTimeout(() => {
@@ -105,6 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 7000);
   }
 
+  /* Validating user input */
   function validateForm() {
     let isValid = true;
 
@@ -136,6 +141,7 @@ document.addEventListener("DOMContentLoaded", function () {
     return isValid;
   }
 
+  /* show/hide error message */
   function showError(error) {
     const errorText = document.getElementById(error);
     errorText.style.display = "block";
