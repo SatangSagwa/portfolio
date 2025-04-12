@@ -31,7 +31,6 @@ body {
 }
 
 a,
-label,
 button,
 .button,
 .theme {
@@ -40,6 +39,7 @@ button,
   font-family: "Lora", "Public Sans", sans-serif;
 }
 
+label,
 .submit button {
   color: #3e3e3e;
   font-size: 24px;
@@ -129,6 +129,7 @@ button,
 }
 
 .get-in-touch {
+  color: #3e3e3e;
   background-color: #e496a9;
   transition: background-color 0.4s ease;
 }
@@ -164,7 +165,7 @@ button,
 
 .inner-container {
   position: relative;
-  background-color: #609a86;
+  background-color: #477163;
   height: 90%;
   align-content: center;
   justify-items: center;
@@ -221,7 +222,7 @@ button,
 
 /* HEADER */
 header {
-  background-color: rgb(96, 154, 134);
+  background-color: #477163;
   position: fixed;
   z-index: 10000;
   width: 100%;
@@ -356,6 +357,7 @@ img {
 
 .git {
   background-color: #e496a9;
+  color: #3e3e3e;
   cursor: pointer;
   transition: background-color 0.4s ease;
 }
@@ -605,7 +607,7 @@ textarea:focus {
 /*FOOTER*/
 
 footer {
-  background-color: #609a86;
+  background-color: #477163;
   height: 90px;
   display: flex;
   align-items: center;
