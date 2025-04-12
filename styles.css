@@ -113,12 +113,37 @@ button,
   border-radius: 50px;
 }
 
+.about-btn,
+.skills-btn {
+  color: #f4f1de;
+  transition: color 0.4s ease;
+
+}
+
+.about-btn:hover,
+.skills-btn:hover {
+  color: #d8d7d5;
+  transition: color 0.4s ease;
+}
+
 .get-in-touch {
   background-color: #e496a9;
+  transition: background-color 0.4s ease;
+}
+
+.get-in-touch:hover {
+  background-color: #c48594;
+  transition: background-color 0.4s ease;
 }
 
 .theme {
   background-color: #3e3e3e;
+  transition: background-color 0.4s ease;
+}
+
+.theme:hover {
+  background-color: #0e1514;
+  transition: background-color 0.4s ease;
 }
 
 .full-container {
@@ -652,7 +677,7 @@ body.dark-theme textarea {
 
 body.dark-theme input:focus,
 body.dark-theme textarea:focus {
-  background-color: #d8d6b8;
+  background-color: #bdbba0;
 }
 
 body.dark-theme .dev-vector svg,
@@ -716,9 +741,22 @@ body.dark-theme .git {
   transition: background-color 0.4s ease;
 }
 
-body.dark-theme .git:hover {
+body.dark-theme .git:hover,
+body.dark-theme .get-in-touch:hover {
   background-color: #7e3d4c;
   transition: background-color 0.4s ease;
+}
+
+body.dark-theme .about-btn:hover,
+body.dark-theme .skills-btn:hover {
+  color: #bdbba0;
+  transition: color 0.4s ease;
+}
+
+body.dark-theme .theme:hover {
+  background-color: #bdbba0;
+  transition: background-color 0.4s ease;
+
 }
 
 /*ADAPTIVITY*/

@@ -33,11 +33,32 @@ const gitLogo = document.querySelector(".git-img");
 const profileImgOne = document.querySelector(".profile-one img");
 const profileImgTwo = document.querySelector(".profile-two img");
 
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "dark") {
+  document.body.classList.add("dark-theme");
+  loadTheme("dark");
+} else {
+  document.body.classList.remove("dark-theme");
+  loadTheme("light");
+}
+
 themeButton?.addEventListener("click", () => {
   document.body.classList.toggle("dark-theme");
 
   /* DARK */
   if (document.body.classList.contains("dark-theme")) {
+    loadTheme("dark");
+    localStorage.setItem("theme", "dark");
+  } else {
+    /* LIGHT */
+    loadTheme("light");
+    localStorage.setItem("theme", "light");
+  }
+});
+
+function loadTheme(theme) {
+  if (theme === "dark") {
     themeButton.textContent = "Light";
     gitLogo.src = "https://i.ibb.co/3mDLS9RZ/Github.png";
     profileImgOne.src =
@@ -45,7 +66,6 @@ themeButton?.addEventListener("click", () => {
     profileImgTwo.src =
       "https://i.ibb.co/vrQrpsJ/1-A7-CB5-C2-59-DA-4048-B105-769267-CF5357-1-2-4.png";
   } else {
-    /* LIGHT */
     themeButton.textContent = "Dark";
     gitLogo.src = "https://i.ibb.co/fdkPtJK3/Github-1.png";
     profileImgOne.src =
@@ -53,7 +73,7 @@ themeButton?.addEventListener("click", () => {
     profileImgTwo.src =
       "https://i.ibb.co/CpcKFS2B/1-A7-CB5-C2-59-DA-4048-B105-769267-CF5357-1-2-1.png";
   }
-});
+}
 
 /* SUBMIT FORM */
 document.addEventListener("DOMContentLoaded", function () {
@@ -72,9 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const response = document.getElementById("response");
 
   submitBtn.addEventListener("click", function () {
-    console.log("Custom button clicked");
     if (validateForm()) {
-      console.log("Form is valid. Submitting...");
       form.reset();
       popupResponse();
     }
@@ -94,7 +112,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (nameInput.value.trim() === "") {
       showError("name-error");
       isValid = false;
-      console.log("NAME");
     } else {
       hideError("name-error");
     }
@@ -104,7 +121,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!emailPattern.test(emailInput.value)) {
       showError("email-error");
       isValid = false;
-      console.log("EMAIL");
     } else {
       hideError("email-error");
     }
@@ -113,7 +129,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (messageInput.value.trim() === "") {
       showError("message-error");
       isValid = false;
-      console.log("MESSAGE");
     } else {
       hideError("message-error");
     }
