@@ -7,14 +7,41 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     />
+    <meta
+      name="description"
+      content="Fullstack developer specializing in Java, frontend/backend development, and building clean, impactful web solutions. Gothenburg-based."
+    />
     <link rel="stylesheet" href="styles.css" />
 
-    <title>EMILIA IVARSSON</title>
+    <!-- Descriptive for SEO -->
+    <title>Emilia | Java & Fullstack Developer</title>
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Emilia",
+        "url": "https://satangsagwa.github.io/portfolio/start.html",
+        "jobTitle": "Fullstack Developer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Freelance / Open to work"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Gothenburg",
+          "addressCountry": "Sweden"
+        },
+        "email": "mailto:emilia@ppd360.com",
+        "sameAs": ["https://github.com/satangsagwa"]
+      }
+    </script>
   </head>
   <body>
-    <header>
+    <header aria-labelledby="header-title">
       <section class="header-inner">
-        <h2 class="title">EMILIA IVARSSON</h2>
+        <h2 class="title" id="header-title">EMILIA IVARSSON</h2>
         <nav>
           <ul>
             <li><a class="about-btn" href="#about">About</a></li>
@@ -33,14 +60,15 @@
     </header>
 
     <!-- MAIN-SECTION HOLDING EVERYTHING -->
-    <section class="main">
+    <section class="main" aria-label="The main section for the entire page">
       <!-- START/WELCOME -->
-      <section class="full-container start">
+      <section class="full-container start" aria-label="Start page">
         <section class="inner-container">
-          <section class="round profile-one">
+          <section class="round profile-one" aria-label="First profile image">
             <img
               src="https://i.ibb.co/GfKQkDG8/1-A7-CB5-C2-59-DA-4048-B105-769267-CF5357-1-2.png"
               alt="Monochromatic profile image of a woman with fair skin and dark hair, facing slightly sideways."
+              loading="lazy"
             />
           </section>
           <section class="dev-container" aria-hidden="true">
@@ -692,7 +720,7 @@
         </section>
       </section>
 
-      <section class="divider introScroll">
+      <section class="divider introScroll" aria-hidden="true">
         <svg
           class="divider-line"
           fill="none"
@@ -707,7 +735,7 @@
       </section>
 
       <!-- INTRODUCTION -->
-      <section class="full-container">
+      <section class="full-container" aria-label="Introduction page">
         <section class="inner-container intro flex">
           <section class="half-container left-intro">
             <section class="intro-txt">
@@ -734,35 +762,40 @@
                 process.
               </p>
             </section>
-            <section class="round git">
+            <section class="round git" aria-labelledby="github-section">
               <button class="git-logo">
                 <img
                   class="git-img"
                   src="https://i.ibb.co/fdkPtJK3/Github-1.png"
                   alt="GitHub Logo"
+                  loading="lazy"
                 />
               </button>
               <h4>github.com/SatangSagwa</h4>
             </section>
           </section>
           <section class="half-container right-intro">
-            <section class="round age">
+            <section class="round age" aria-label="Birthdate">
               <h3>June 20th<br />2001</h3>
             </section>
             <section class="round profile-two">
               <img
                 src="https://i.ibb.co/CpcKFS2B/1-A7-CB5-C2-59-DA-4048-B105-769267-CF5357-1-2-1.png"
-                alt="Monochromatic profile image of Emilia, a woman with fair skin and dark hair, facing slightly sideways."
+                alt="Monochromatic profile image of Emilia, a woman with fair skin and dark ombre hair, facing slightly sideways."
+                loading="lazy"
               />
             </section>
             <section class="round img-text">
-              <h4>Creative and curious developer</h4>
+              <h4>
+                Code is my canvas, and every problem is a chance to create
+                something beautiful.
+              </h4>
             </section>
           </section>
         </section>
       </section>
 
-      <section class="divider skillsScroll">
+      <section class="divider skillsScroll" aria-hidden="true">
         <svg
           class="divider-line"
           fill="none"
@@ -777,10 +810,10 @@
       </section>
 
       <!-- SKILLS -->
-      <section class="full-container">
+      <section class="full-container" aria-labelledby="skills-title">
         <section class="inner-container skills">
           <section class="top-skills">
-            <h2>SKILLS</h2>
+            <h2 id="skills-title">SKILLS</h2>
           </section>
           <section class="bottom-skills flex">
             <section class="half-container left-skills">
@@ -874,7 +907,7 @@
         </section>
       </section>
 
-      <section class="divider contactScroll">
+      <section class="divider contactScroll" aria-hidden="true">
         <svg
           class="divider-line"
           fill="none"
@@ -889,11 +922,11 @@
       </section>
 
       <!-- CONTACT -->
-      <section class="full-container bottom">
+      <section class="full-container bottom" aria-labelledby="contact-title">
         <section class="inner-container contact flex">
           <section class="half-container left-contact">
             <section class="contact-txt">
-              <h2>CONTACT ME</h2>
+              <h2 id="contact-title">CONTACT ME</h2>
               <section class="round contact-info">
                 <p>
                   I’d love to hear from you—whether it’s for collaboration,
