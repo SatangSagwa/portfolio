@@ -9,7 +9,7 @@
   list-style: none;
   text-decoration: none;
   border: none;
-  transition: background-color .4s ease;
+  transition: background-color 0.4s ease;
   transition: color 0.6s ease;
 }
 
@@ -19,7 +19,7 @@ body {
   line-height: 1.5;
   font-size: 18px;
   overflow-x: hidden;
-  transition: background-color .4s ease;
+  transition: background-color 0.4s ease;
 }
 
 /*GENERAL*/
@@ -53,6 +53,8 @@ textarea {
   color: #3e3e3e;
   font-size: 18px;
   font-family: "Lora", "Public Sans", sans-serif;
+  border: none;
+  outline: none;
 }
 
 h1 {
@@ -288,6 +290,7 @@ img {
   position: relative;
   bottom: 50px;
   z-index: 100;
+  cursor: pointer;
 }
 
 .scroll-svg {
@@ -304,6 +307,8 @@ img {
 
 .intro-txt {
   flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .intro-txt p {
@@ -312,7 +317,6 @@ img {
 
 .git,
 .img-text {
-  background-color: #e496a9;
   width: 100%;
   height: 15%;
   padding: 10px 15px;
@@ -321,6 +325,17 @@ img {
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+.git {
+  background-color: #e496a9;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+
+.git:hover {
+  background-color: #c48594;
+  transition: background-color 0.4s ease;
 }
 
 .git-logo {
@@ -417,7 +432,7 @@ img {
 .square,
 .area-box {
   height: 90%;
-  overflow-x: hidden; /* No horizontal scroll */
+  overflow-x: hidden;
   overflow-y: auto;
 }
 
@@ -482,6 +497,8 @@ img {
   height: 70%;
   padding: 20px;
   justify-self: center;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .contact-info p {
@@ -519,8 +536,16 @@ img {
 
 input,
 textarea {
+  background-color: #f4f1de;
   width: 80%;
   padding: 20px;
+  transition: background-color 0.4s ease;
+}
+
+input:focus,
+textarea:focus {
+  background-color: #d8d7d5;
+  transition: background-color 0.4s ease;
 }
 
 .submit {
@@ -528,6 +553,13 @@ textarea {
   padding: 20px 40px;
   width: 50%;
   text-align: center;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+
+.submit:hover {
+  background-color: #d8d7d5;
+  transition: background-color 0.4s ease;
 }
 
 .thank-you {
@@ -569,6 +601,10 @@ footer {
   color: #efc583; /* Light mode color */
 }
 
+.scroll-svg circle:hover {
+  color: #ceaa71; /* Light mode color */
+}
+
 .scroll-svg path {
   color: #3e3e3e; /* Light mode color */
 }
@@ -579,6 +615,15 @@ body.dark-theme .square,
 body.dark-theme .contact-info,
 body.dark-theme .submit {
   background-color: #0e1514;
+}
+
+body.dark-theme .submit {
+  transition: background-color 0.4s ease;
+}
+
+body.dark-theme .submit:hover {
+  background-color: #192524;
+  transition: background-color 0.4s ease;
 }
 
 body.dark-theme .submit button {
@@ -605,6 +650,11 @@ body.dark-theme textarea {
   color: #0e1514;
 }
 
+body.dark-theme input:focus,
+body.dark-theme textarea:focus {
+  background-color: #d8d6b8;
+}
+
 body.dark-theme .dev-vector svg,
 body.dark-theme .scroll-svg path,
 body.dark-theme .img-text h4,
@@ -626,6 +676,10 @@ body.dark-theme a {
 
 body.dark-theme .scroll-svg circle {
   color: #be647a;
+}
+
+body.dark-theme .scroll-svg circle:hover {
+  color: #7e3d4c;
 }
 
 body.dark-theme h1 {
@@ -659,6 +713,12 @@ body.dark-theme p {
 body.dark-theme .development,
 body.dark-theme .git {
   background-color: #be647a;
+  transition: background-color 0.4s ease;
+}
+
+body.dark-theme .git:hover {
+  background-color: #7e3d4c;
+  transition: background-color 0.4s ease;
 }
 
 /*ADAPTIVITY*/
@@ -727,6 +787,10 @@ body.dark-theme .git {
 
   .form-group {
     flex: 1;
+  }
+
+  h3 {
+    font-size: 24px;
   }
 
   h4 {

@@ -22,19 +22,36 @@ document.querySelector(".get-in-touch").addEventListener("click", function (e) {
     .scrollIntoView({ behavior: "smooth" });
 });
 
+/* GIT BTN */
+document.querySelector(".git").addEventListener("click", function () {
+  window.open("https://github.com/satangsagwa", "_blank");
+});
+
 /* THEME SWAP */
 const themeButton = document.querySelector(".theme");
 const gitLogo = document.querySelector(".git-img");
+const profileImgOne = document.querySelector(".profile-one img");
+const profileImgTwo = document.querySelector(".profile-two img");
 
 themeButton?.addEventListener("click", () => {
   document.body.classList.toggle("dark-theme");
 
+  /* DARK */
   if (document.body.classList.contains("dark-theme")) {
     themeButton.textContent = "Light";
     gitLogo.src = "https://i.ibb.co/3mDLS9RZ/Github.png";
+    profileImgOne.src =
+      "https://i.ibb.co/h1WkCv8L/1-A7-CB5-C2-59-DA-4048-B105-769267-CF5357-1-2-2.png";
+    profileImgTwo.src =
+      "https://i.ibb.co/vrQrpsJ/1-A7-CB5-C2-59-DA-4048-B105-769267-CF5357-1-2-4.png";
   } else {
+    /* LIGHT */
     themeButton.textContent = "Dark";
     gitLogo.src = "https://i.ibb.co/fdkPtJK3/Github-1.png";
+    profileImgOne.src =
+      "https://i.ibb.co/GfKQkDG8/1-A7-CB5-C2-59-DA-4048-B105-769267-CF5357-1-2.png";
+    profileImgTwo.src =
+      "https://i.ibb.co/CpcKFS2B/1-A7-CB5-C2-59-DA-4048-B105-769267-CF5357-1-2-1.png";
   }
 });
 
