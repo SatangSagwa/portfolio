@@ -9,7 +9,7 @@
   list-style: none;
   text-decoration: none;
   border: none;
-  transition: background-color 0.4s ease;
+  transition: background-color .4s ease;
   transition: color 0.6s ease;
 }
 
@@ -19,6 +19,7 @@ body {
   line-height: 1.5;
   font-size: 18px;
   overflow-x: hidden;
+  transition: background-color .4s ease;
 }
 
 /*GENERAL*/
@@ -46,7 +47,9 @@ button,
 }
 
 ::placeholder,
-.error {
+.error,
+input,
+textarea {
   color: #3e3e3e;
   font-size: 18px;
   font-family: "Lora", "Public Sans", sans-serif;
@@ -180,6 +183,11 @@ button,
 .top-skills,
 .contact-txt {
   padding-left: 20px;
+}
+
+.error,
+.thank-you {
+  display: none;
 }
 
 /* HEADER */
@@ -520,6 +528,10 @@ textarea {
   padding: 20px 40px;
   width: 50%;
   text-align: center;
+}
+
+.thank-you {
+  color: #3e3e3e;
 }
 
 /*FOOTER*/

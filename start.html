@@ -906,7 +906,7 @@
                   id="name"
                   placeholder="Enter your name"
                 />
-                <span class="error" id="name-error">Name is required!</span>
+                <span class="error" id="name-error">Name is required.</span>
               </section>
 
               <section class="form-group">
@@ -917,7 +917,9 @@
                   id="email"
                   placeholder="Enter your email"
                 />
-                <span class="error" id="email-error">Email is required!</span>
+                <span class="error" id="email-error"
+                  >Please enter a valid email.</span
+                >
               </section>
 
               <section class="form-group">
@@ -926,16 +928,20 @@
                   class="round message-area"
                   rows="15"
                   name="message"
+                  id="message"
                   required,
                   placeholder="Write your message..."
                 ></textarea>
                 <span class="error" id="message-error"
-                  >Message is required!</span
+                  >Message is required.</span
                 >
               </section>
             </form>
-            <section class="round submit">
-              <button type="submit" id="submitBtn">Send</button>
+            <section class="round submit" id="submitBtn">
+              <button type="submit">Send</button>
+            </section>
+            <section class="thank-you" id="response">
+              <h5>Thank you for your message!</h5>
             </section>
           </section>
         </section>
