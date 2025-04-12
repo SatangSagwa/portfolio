@@ -117,7 +117,6 @@ button,
 .skills-btn {
   color: #f4f1de;
   transition: color 0.4s ease;
-
 }
 
 .about-btn:hover,
@@ -756,7 +755,6 @@ body.dark-theme .skills-btn:hover {
 body.dark-theme .theme:hover {
   background-color: #bdbba0;
   transition: background-color 0.4s ease;
-
 }
 
 /*ADAPTIVITY*/
@@ -1214,5 +1212,9 @@ body.dark-theme .theme:hover {
 
   .get-in-touch {
     width: fit-content;
+  }
+
+  .scroll-btn {
+    bottom: -35px;
   }
 }
