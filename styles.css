@@ -808,6 +808,14 @@ body.dark-theme .git {
 
 /*HORIZONTAL PHONE*/
 @media (max-width: 1000px) {
+  header {
+    height: 40px;
+  }
+
+  .menu-button {
+    padding: 5px 10px;
+  }
+
   .full-container {
     height: 120vh;
   }
@@ -996,8 +1004,15 @@ body.dark-theme .git {
     padding-top: 30px;
   }
 
+  .intro-txt,
+  .top-skills,
+  .contact-txt {
+    align-self: center;
+    align-items: center;
+    padding: 0px;
+  }
+
   .left-intro {
-    background-color: #efc583;
     width: 100%;
     align-items: center;
     padding: 30px 30px;
@@ -1025,6 +1040,7 @@ body.dark-theme .git {
     flex-direction: column;
     gap: 20px;
     padding: 0px 20px;
+    margin: 10px 0px 40px 0px;
   }
 
   .profile-two {
@@ -1035,5 +1051,50 @@ body.dark-theme .git {
   .profile-two img {
     transform: translate(-50%, 0%);
     scale: 1.1;
+  }
+
+  .img-text,
+  .git {
+    width: 90%;
+    align-self: center;
+  }
+
+  .top-skills {
+    padding: 30px 0px;
+  }
+
+  .bottom-skills {
+    padding: 20px 0px;
+  }
+
+  .education {
+    padding: 0px 20px;
+    margin: 0px;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .skill-areas {
+    padding: 30px 5px;
+  }
+
+  .square {
+    height: 80%;
+  }
+
+  .area-box {
+    height: 200px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  h4 {
+    font-size: 12px;
+  }
+
+  .right-contact {
+    margin: 0px 0px 30px 0px;
   }
 }

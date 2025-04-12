@@ -1,3 +1,4 @@
+/* SCROLL NAV BUTTONS */
 document.querySelector(".scroll-btn").addEventListener("click", function () {
   document.querySelector(".introScroll").scrollIntoView({ behavior: "smooth" });
 });
@@ -21,6 +22,8 @@ document.querySelector(".get-in-touch").addEventListener("click", function (e) {
     .scrollIntoView({ behavior: "smooth" });
 });
 
+
+/* THEME SWAP */
 const themeButton = document.querySelector(".theme");
 const gitLogo = document.querySelector(".git-img");
 
@@ -35,3 +38,5 @@ themeButton?.addEventListener("click", () => {
     gitLogo.src = "https://i.ibb.co/fdkPtJK3/Github-1.png";
   }
 });
+
+/* HIDE MENU */
