@@ -245,6 +245,7 @@ nav ul {
   align-items: center;
   gap: 30px;
   list-style: none;
+  cursor: pointer;
 }
 
 .menu-button {

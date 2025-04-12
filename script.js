@@ -71,7 +71,7 @@ function loadTheme(theme) {
       "https://i.ibb.co/vrQrpsJ/1-A7-CB5-C2-59-DA-4048-B105-769267-CF5357-1-2-4.png";
   } else {
     themeButton.textContent = "Dark";
-    gitLogo.src = "https://i.ibb.co/fdkPtJK3/Github-1.png";
+    gitLogo.src = "https://i.ibb.co/pjcJ5BYk/Github-2.png";
     profileImgOne.src =
       "https://i.ibb.co/GfKQkDG8/1-A7-CB5-C2-59-DA-4048-B105-769267-CF5357-1-2.png";
     profileImgTwo.src =
