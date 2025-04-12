@@ -963,8 +963,7 @@ body.dark-theme .git {
 /*VERTICAL PHONE*/
 @media (max-width: 500px) {
   .full-container {
-    height: 100vh;
-    min-height: fit-content;
+    height: fit-content;
   }
 
   .inner-container {
@@ -973,11 +972,6 @@ body.dark-theme .git {
     align-items: center;
     justify-content: center;
     height: fit-content;
-  }
-
-  .start {
-    height: 60vh;
-    min-height: 0px;
   }
 
   .profile-one {
@@ -1079,7 +1073,7 @@ body.dark-theme .git {
   }
 
   .square {
-    height: 80%;
+    height: 90%;
   }
 
   .area-box {
