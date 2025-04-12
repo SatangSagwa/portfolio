@@ -92,6 +92,7 @@ a[href^="mailto"] {
   color: #f4f1de;
   font-size: 24px;
   font-family: "Public Sans", sans-serif;
+  transition: color 0.4s ease;
 }
 
 a,
@@ -531,6 +532,13 @@ img {
 a[href^="tel"],
 a[href^="mailto"] {
   color: #3e3e3e;
+  transition: color 0.4s ease;
+}
+
+a[href^="tel"]:hover,
+a[href^="mailto"]:hover {
+  color: #e496a9;
+  transition: color 0.4s ease;
 }
 
 .right-contact {
@@ -738,6 +746,13 @@ body.dark-theme p,
 body.dark-theme a[href^="tel"],
 body.dark-theme a[href^="mailto"] {
   color: #eae7af;
+  transition: color 0.4s ease;
+}
+
+body.dark-theme a[href^="tel"]:hover,
+body.dark-theme a[href^="mailto"]:hover {
+  color: #be647a;
+  transition: color 0.4s ease;
 }
 
 body.dark-theme .development,
@@ -985,7 +1000,7 @@ body.dark-theme .theme:hover {
   }
 
   h4 {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   h5 {
@@ -1198,7 +1213,7 @@ body.dark-theme .theme:hover {
   }
 
   .square {
-    height: 90%;
+    height: 95%;
   }
 
   .area-box {
