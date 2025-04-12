@@ -1091,4 +1091,13 @@ body.dark-theme .git {
   .right-contact {
     margin: 0px 0px 30px 0px;
   }
+
+  .title {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .get-in-touch {
+    width: fit-content;
+  }
 }
