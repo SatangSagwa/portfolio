@@ -86,7 +86,9 @@ h6 {
   font-family: "Public Sans", sans-serif;
 }
 
-p {
+p,
+a[href^="tel"],
+a[href^="mailto"] {
   color: #f4f1de;
   font-size: 24px;
   font-family: "Public Sans", sans-serif;
@@ -525,15 +527,10 @@ img {
   overflow-y: auto;
 }
 
-.contact-info p {
-  color: #3e3e3e;
-}
-
+.contact-info p,
 a[href^="tel"],
 a[href^="mailto"] {
-  color: inherit;
-  text-decoration: none;
-  font-family: inherit;
+  color: #3e3e3e;
 }
 
 .right-contact {
@@ -737,7 +734,9 @@ body.dark-theme h6 {
   color: #eae7af;
 }
 
-body.dark-theme p {
+body.dark-theme p,
+body.dark-theme a[href^="tel"],
+body.dark-theme a[href^="mailto"] {
   color: #eae7af;
 }
 
@@ -849,7 +848,9 @@ body.dark-theme .theme:hover {
     font-size: 13px;
   }
 
-  p {
+  p,
+  a[href^="tel"],
+  a[href^="mailto"] {
     font-size: 18px;
   }
 
@@ -921,7 +922,9 @@ body.dark-theme .theme:hover {
     font-size: 10px;
   }
 
-  p {
+  p,
+  a[href^="tel"],
+  a[href^="mailto"] {
     font-size: 16px;
   }
 }
@@ -993,7 +996,9 @@ body.dark-theme .theme:hover {
     font-size: 10px;
   }
 
-  p {
+  p,
+  a[href^="tel"],
+  a[href^="mailto"] {
     font-size: 10px;
   }
 
