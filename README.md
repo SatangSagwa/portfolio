@@ -6,7 +6,7 @@ Jag valde först att utgå ifrån en design jag hittade på Pinterest, skapade e
 
 ### Första Figma mockup:
 
-![alt text](image.png)
+![alt text](image-4.png)
 
 Min idé var att göra att hjulet i botten snurrar och visar olika intressen, samt att skapa separata sidor för kontakt samt arbetserfarenhet. Jag ville att överlappande element skulle ge intrycket av att "det finns mer nedan" och driva användaren att fortsätta scrolla längre.
 När jag kom till media queries så insåg jag att designen blev för komlicerad för syftet av denna uppgiften samt som första webbsida. Detta berodde på att det var mitt första projekt och att jag hade ej planerat strukturen överhuvudtaget eftersom jag var väldigt driven att börja skapa något. De överlappande elementen hade för det mesta absolute positioning, mycket hade fasta pixel-storlekar och det blev för tidskrävande i relation med deadline som närmade sig.
@@ -100,5 +100,11 @@ Bilder använder Lazy loading för optimering.
 Jag är ändå lite tacksam att jag stött på många problem i detta projektet, det har gjort det tydligt vad jag skall förbättra.
 För det första skall jag absolut planera bättre inför nästa gång, särskilt gällande klasser. Det är viktigt att identifiera vilka delar som har gemensamma attribut, då det underlättar arbetet med CSS enormt.
 Jag skall se till att skapa en enklare design till en början och se till att allt kan skala som planerat.
-Även HTML taggarna hade kunnat planerats ytterligare för att öka semantiken och lättare identifiera vart ARIA-attribut är lämpliga. Jag skall se till att färgernas kontrast är tillräckligt bra ifrån början samt bestämma typografi exakt (vart h1, h4 och p skall användas) redan i design-stadiet. Generellt sett är jag nöjd med resultatet men hade hoppats på smidigare och snabbare utveckling.
+Även HTML taggarna hade kunnat planerats ytterligare för att öka semantiken och lättare identifiera vart ARIA-attribut är lämpliga. Jag skall se till att färgernas kontrast är tillräckligt bra ifrån början samt bestämma typografi exakt (vart h1, h4 och p skall användas) redan i design-stadiet. Rent visuellt är jag nöjd med resultatet men hade hoppats på smidigare och snabbare utveckling.
 I framtiden vill jag utöka sidan med mer information, roligare respons när meddelandet skickats (samt att faktiskt skicka meddelandet), och eventuellt att skala upp de interaktiva elementen litegrann vid hover. Skills-rutorna skulle kunna visa utökad information OnClick.
+
+## Youtube Demonstration
+https://www.youtube.com/watch?v=kWfrH7BuOWw
+
+## Publicerad GitHub-page
+https://satangsagwa.github.io/portfolio/start.html
